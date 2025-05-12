@@ -1,4 +1,5 @@
-let myImage = img`
+let myImage = 0
+let picture = images.stretchImage(img`
     ..............................
     ..............................
     ................88..88........
@@ -15,17 +16,16 @@ let myImage = img`
     ..............................
     ..............................
     ..............................
-    `
-let picture = images.stretchImage(myImage, 1, 1)
+    `, 2, 2)
 images.blit(
 picture,
 0,
 0,
-image.getDimension(picture, image.Dimension.Width),
-image.getDimension(picture, image.Dimension.Height),
+60,
+32,
 scene.backgroundImage(),
 20,
 20,
-image.getDimension(picture, image.Dimension.Width) * 5,
-image.getDimension(picture, image.Dimension.Height) * 5
+103,
+79
 )

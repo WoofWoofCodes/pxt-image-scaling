@@ -16,6 +16,7 @@ namespace images {
     //% ty.defl=0
     //% tw.defl=16
     //% th.defl=16
+    //% group="Drawing"
     export function blit(source: Image, sx: number, sy: number, sw: number, sh: number, target: Image, tx: number, ty: number, tw: number, th: number) {
         target.blit(tx, ty, tw, th, source, sx, sy, sw, sh, true, false)
     }
@@ -27,6 +28,7 @@ namespace images {
     //% blockId="WoofWoof_Stretch_Image_API"
     //% source.shadow=variables_get
     //% source.defl=picture
+    //% group="Drawing"
     export function stretchImage(source: Image, width: number, height: number) {
         let i = image.create(source.width * width, source.height * height)
         i.blit(0, 0, source.width * width, source.height * height, source, 0, 0, source.width, source.height, true, false)

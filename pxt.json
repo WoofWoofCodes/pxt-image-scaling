@@ -7,7 +7,6 @@
     },
     "files": [
         "README.md",
-        "assets.json",
         "blitAPI.ts"
     ],
     "testFiles": [
@@ -15,7 +14,8 @@
         "main.blocks",
         "main.ts",
         "tilemap.g.jres",
-        "tilemap.g.ts"
+        "tilemap.g.ts",
+        "assets.json"
     ],
     "targetVersions": {
         "target": "2.0.56",
